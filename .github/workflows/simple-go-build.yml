@@ -1,4 +1,4 @@
-name: Pipeline run by @${{ github.actor }}
+name: Pipeline run by go
  
 on:
   push:
