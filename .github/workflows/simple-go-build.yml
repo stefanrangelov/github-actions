@@ -1,4 +1,6 @@
 name: Pipeline run by go
+env:
+  NAME: Stefan
  
 on:
   push:
@@ -15,5 +17,9 @@ jobs:
       with:
         go-version: '1.15.1'
     - run: go version 
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo 'Hello ${{NAME}}'
     
  
