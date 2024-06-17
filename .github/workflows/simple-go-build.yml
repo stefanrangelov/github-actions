@@ -20,6 +20,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - run: echo 'Hello ${{NAME}}'
+    - run: echo 'Hello ${{env.NAME}}'
     
  
